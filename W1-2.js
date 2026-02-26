@@ -184,3 +184,27 @@ document.addEventListener("DOMContentLoaded", () => {
       return Math.max(lo, Math.min(hi, v))
     }
 });
+
+
+const audio = document.getElementById("bgm");
+const btn = document.getElementById("music-btn");
+
+btn.addEventListener("click", async () => {
+  try {
+    if (audio.paused) {
+      await audio.play();
+      btn.textContent = "Pause";
+      localStorage.setItem("bgm_on", "1");
+    } else {
+      audio.pause();
+      btn.textContent = "Play";
+      localStorage.setItem("bgm_on", "0");
+    }
+    } catch (e) {
+      console.log("재생 막힘:", e);
+    }
+  });
+
+  if (localStorage.getItem("bgm_on") === "1") {
+    btn.textContent = "Pause music";
+  }

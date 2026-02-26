@@ -18,6 +18,8 @@ body {background-color: antiquewhite;}
   margin-top: 10vh;
 }
 
+
+
 .detail-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px,1fr));

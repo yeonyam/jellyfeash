@@ -18,11 +18,12 @@ body{background-color: beige;}
   position: fixed;
   inset: 0;
   overflow: hidden;
+  pointer-events: none;
 }
 
 .icon-sculptures,
 .icon-paintings,
-.icon-about{
+.icon-about {
   position: absolute;
   left: 0;
   top: 0;
@@ -31,6 +32,14 @@ body{background-color: beige;}
 
   will-change: transform;
 }
+
+
+.icon-sculptures,
+.icon-paintings,
+.icon-about,
+  [data-key]{
+    pointer-events: auto;
+  }
 
 a {
   text-decoration: none;
