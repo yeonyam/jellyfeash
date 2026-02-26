@@ -1,1 +1,38 @@
 body{background-color: beige;}
+
+.icon{
+  width: 200px;
+}
+
+.type-bar{
+  font-size: 15px;
+  display: block;
+}
+
+.icon-title{
+  display: inline-block;
+}
+
+.container{
+  display: inline-block;
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+}
+
+.icon-sculptures,
+.icon-paintings,
+.icon-about{
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  transition: none;
+
+  will-change: transform;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
