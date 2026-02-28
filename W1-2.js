@@ -193,11 +193,11 @@ btn.addEventListener("click", async () => {
   try {
     if (audio.paused) {
       await audio.play();
-      btn.textContent = "Pause";
+      btn.textContent = "pause";
       localStorage.setItem("bgm_on", "1");
     } else {
       audio.pause();
-      btn.textContent = "Play";
+      btn.textContent = "music play";
       localStorage.setItem("bgm_on", "0");
     }
     } catch (e) {
@@ -205,6 +205,6 @@ btn.addEventListener("click", async () => {
     }
   });
 
-  if (localStorage.getItem("bgm_on") === "1") {
-    btn.textContent = "Pause music";
+  if (localStorage.getItem("bgm_on") === "0") {
+    btn.textContent = "pause music";
   }

@@ -1,1 +1,80 @@
-body {background-color:aliceblue}
+
+.layout {
+  display: flex;
+  max-width: 1200px;
+  width: 95%;
+}
+
+:root{
+  --page-bg: #ddffc9;
+  --panel-bg: #fff;     /* 큰 박스가 될 배경판 */
+  --panel-shadow: rgba(0,0,0,.18);
+
+  --card-bg: #f8fdc8;      /* 작은 박스 */
+  --card-border: #1b5bfc;
+  --title-bg: #1b5bfc;
+  --title-text: #fff;
+}
+
+body{
+  margin:0;
+  background-color: var(--page-bg);
+   font-family: "Roboto Mono";
+
+}
+
+.sidebar {
+  width: 200px;    /* 왼쪽 메뉴 폭 */
+}
+
+.content {
+  flex: 1;         /* 오른쪽이 남은 공간 채움 */
+}
+
+.title{}
+
+/* 오른쪽 영역: border 없음 */
+.main-wrap{
+  flex: 1;
+  position: relative;
+  padding: 5px;              /* 이 여백이 “큰 판이 감싼다”를 만듦 */
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* 큰 배경판(진짜 큰 박스) */
+.main-wrap::before{
+  content:"";
+  position: absolute;
+  inset: 0;                   /* padding 포함해서 전체 덮음 */
+  background-color: var(--panel-bg);
+  border-radius: 5px;
+  z-index: 0;
+}
+
+/* 카드들이 배경판 위에 올라오게 */
+.card{
+  position: relative;
+  z-index: 1;
+
+  background-color: var(--card-bg);
+  border: 7px solid var(--card-border);
+   font-family: "Roboto Mono";
+}
+
+/* 카드 내부 */
+.card-title{
+  background-color: var(--title-bg);
+  color: var(--title-text);
+  padding: 5px 10px;
+  font-weight: bold;
+  border-bottom: 2px solid var(--card-border);
+  font-family: "Roboto Mono";
+}
+
+.card-body{
+  padding: 10px;
+  line-height: 1.55;
+   font-family: "Roboto Mono";
+}
