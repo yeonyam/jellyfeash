@@ -1,60 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>about</title>
-    <link rel="stylesheet" href="./about.css" />
-  </head>
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>about</title>
+    <link rel="stylesheet" href="about.css">
+    <script src="about.js" defer></script>
+</head>
+<body>
+<a href="index.html">back to home</a>
+<button id="music-btn" type="button">play</button>
+ <audio id="bgm" preload="auto" loop>
+  <source src="벌레펑크.mp3" type="audio/mpeg">
+ </audio>
+<!-- 새 레이어 -->
+<div id="bird-layer"></div>
 
-  <body>
-    <a href="index.html">back to home</a>
-  <div class="layout">
+<!-- 텍스트 레이어 -->
+<div id="text-layer">
+  <div class="text-block t1">
+    <div class="label"></div>
+    <p>
+      Nothing is fixed<br/>
+      Everything is in constant flux<br/>
+      War and famine<br/>
+      Peace and abundance<br/>
+      The world descends into chaos<br/>
+      Where does the self stand, in what form?<br/>
 
-    <!-- left long panel -->
-    <aside class="sidebar">
-      <div class="menu-item">@Where do we</div>
-      <div class="menu-item">@originate?</div>
-      <div class="menu-item">@Where does</div>
-      <div class="menu-item">@everything come from?</div>
-      <div class="menu-item">@Can our diversity be synchronized?</div>
-    </aside>
-    
-
-    <!-- RIGHT: big box that "wraps" smaller boxes -->
-    <main class="main-wrap">
-
-      <section class="card">
-        <div class="header-title">sample title text</div>
-      </section>
-
-      <section class="card">
-        <div class="card-title">artist statement</div>
-        <div class="card-body">
-          <p>
-            This is sample text. Replace it with your artist statement.
-            The goal is: a big panel contains multiple smaller boxes, like early websites.
-          </p>
-          <p>
-            You can add more paragraphs, links, or images here.
-          </p>
-        </div>
-      </section>
-
-      <section class="card">
-        <div class="card-title">sample info</div>
-        <div class="card-body">
-          small text area
-        </div>
-      </section>
-
-      <section class="card">
-        <div class="card-title">sample note</div>
-        <div class="card-body">
-          another small text area
-        </div>
-      </section>
-
-    </main>
+    </p>
   </div>
+
+  <div class="text-block t2">
+    <div class="label"></div>
+    <p>
+      Micro to macro,<br/>
+      Inert matter to living bodies<br/>
+      We name, we mark, we draw our fragile lines<br/>
+      Yet there are things that refuse to be<br/>
+
+    </p>
+  </div>
+
+  <div class="text-block t3">
+    <div class="label"></div>
+    <p>
+      This subtle gap of unrest, of doubt, of grief—<br/>
+      Art is born<br/>
+      My art is a quiet pandemonium
+    </p>
+  </div>
+
+<div class="scroll-group" id="scroll-block-1"
+style="opacity:0; position: fixed; top: 40%; left: 50%;
+ transform: translate(calc(-50% + 80px), 
+      calc(-50% + 20px))">
+  <div class="text-blocky t4">
+  <div class="label"></div>
+  <p>Noelle is an artist based in Daejeon, Korea and Providence, US. 
+    She is studying in Rhode Island School of Design, graduating in 2027.</p>
+</div>
+ <div class="scroll-box1">
+    <p>
+</p>
+  </div>
+</div>
+
+<div class="scroll-group" id="scroll-block-2"
+style="opacity:0; position: fixed; top: 60%; left: 50%;
+transform: translate(calc(-50% + 80px), 
+      calc(-50% + 20px))">
+  <div class="text-blocky t5">
+  <div class="label"></div>
+  <p>email: yeonyaam@gmail.com</br>
+instagram: @jellyfeash
+  </div>
+ <div class="scroll-box2">
+    <p></p>
+  </div>
+</div>
+
+</div>
 </body>
 </html>
