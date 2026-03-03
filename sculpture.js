@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
                "sculpture/20251209-IMG_4332.jpg",
                "sculpture/20251209-IMG_4345.jpg",
                "sculpture/20251209-IMG_4347.jpg",
-               "sculpture/MVI_4317.MOV"],
+               ],
     },
 
     f: {
