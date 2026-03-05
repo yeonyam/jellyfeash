@@ -52,8 +52,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     f: {
       title: "washing machine",
-      text: "no image(yet)",
-      images: [],
+      text: "bad image(yet)",
+      images: ["sculpture/IMG_9544.jpg"],
     },
     };
 

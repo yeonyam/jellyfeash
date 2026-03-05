@@ -1,0 +1,14 @@
+body {
+  font-family: 'Roboto Mono';
+  background-color: azure;
+}
+
+
+.painting img{
+  width: 30%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  background: rgba(0,0,0,0.3);
+  gap: 16px;
+}
